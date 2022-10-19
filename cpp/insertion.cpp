@@ -39,8 +39,15 @@ void printArray(int arr[], int n)
 // Driver code
 int main()
 {
-	int arr[] = { 12, 11, 13, 5, 6 };
-	int N = sizeof(arr) / sizeof(arr[0]);
+	vector<int> arr;
+	int n;
+	cin>>n;
+	for(int i=0;i<n;i++){
+		int x;
+		cin>>x;
+		arr.push_back(x);
+	}
+	int N=arr.size();
 
 	insertionSort(arr, N);
 	printArray(arr, N);
